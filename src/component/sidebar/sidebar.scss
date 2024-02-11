@@ -5,6 +5,7 @@
   align-items: center;
   background: #fff;
   color: black;
+ 
 
   .bg {
     position: fixed;
@@ -13,6 +14,7 @@
     bottom: 0;
     width: 400px;
     background-color: white;
+    z-index: 4;
     .links {
       position: absolute;
       width: 100%;
@@ -37,5 +39,6 @@
     background: transparent;
     border: none;
     cursor: pointer;
+    z-index: 4;
   }
 }
