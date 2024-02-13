@@ -51,7 +51,7 @@ const Section = ({ item }) => {
     target: ref,
     // offset:["start start","end start"]
   });
-  const y = useTransform(scrollYProgress,[0,1],[-1000,1000])
+  const y = useTransform(scrollYProgress,[0,1],[-300,300])
   return (
     <section >
       <div className="container" >
