@@ -18,10 +18,11 @@ const Contact = () => {
     },
   };
 
-  const ref = useRef()
-  const inView = useInView(ref, {margin:"100px"})
+  const ref = useRef();
+  const inView = useInView(ref, { margin: "100px" });
   return (
-    <motion.div ref={ref}
+    <motion.div
+      ref={ref}
       className="contact"
       variants={variants}
       initial="initial"
@@ -54,9 +55,9 @@ const Contact = () => {
         >
           <svg width="450px" height="450px" viewBox="0 0 32.666 32.666">
             <motion.path
-            initial={{pathLength:0}}
-            animate={inView && {pathLength:1}}
-            transition={{duration:3}}
+              initial={{ pathLength: 0 }}
+              animate={inView && { pathLength: 1 }}
+              transition={{ duration: 3 }}
               strokeWidth={0.2}
               fill="none"
               d="M28.189,16.504h-1.666c0-5.437-4.422-9.858-9.856-9.858l-0.001-1.664C23.021,4.979,28.189,10.149,28.189,16.504z
@@ -75,12 +76,14 @@ const Contact = () => {
             />
           </svg>
         </motion.div>
-        <motion.form initial={{ opacity: 0 }}
+        <motion.form
+          initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{
             delay: 4,
             duration: 1,
-          }}>
+          }}
+        >
           <input type="text" required placeholder="Name" />
           <input type="Eamil" required placeholder="Email" />
           <textarea rows="8" placeholder="Message"></textarea>
