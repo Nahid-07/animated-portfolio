@@ -1,5 +1,5 @@
 import "./aboutme.scss";
-import {motion} from "framer-motion"
+import { motion } from "framer-motion";
 
 const AboutMe = () => {
   const textVariants = {
@@ -31,11 +31,21 @@ const AboutMe = () => {
     },
   };
   return (
-    <div className="aboutMe" >
-      <motion.div className="imageContainer" initial="initial" whileInView="animate" variants={imageVariants}>
+    <div className="aboutMe">
+      <motion.div
+        className="imageContainer"
+        initial="initial"
+        whileInView="animate"
+        variants={imageVariants}
+      >
         <img src="/output.jpg" alt="" />
       </motion.div>
-      <motion.div className="textContainer" initial="initial" whileInView="animate" variants={textVariants}>
+      <motion.div
+        className="textContainer"
+        initial="initial"
+        whileInView="animate"
+        variants={textVariants}
+      >
         <motion.h1 variants={textVariants}>About me</motion.h1>
         <motion.p variants={textVariants}>
           Passionate React.js Developer with a 2+ year track record in shaping
