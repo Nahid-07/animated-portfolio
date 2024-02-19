@@ -20,9 +20,9 @@ const Navbar = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <img src="../../../public/facebook.png" alt="" />
-          <img src="../../../public/instagram.png" alt="" />
-          <img src="../../../public/youtube.png" alt="" />
+          <img src="/facebook.png" alt="" />
+          <img src="instagram.png" alt="" />
+          <img src="public/youtube.png" alt="" />
         </motion.div>
       </div>
     </nav>
