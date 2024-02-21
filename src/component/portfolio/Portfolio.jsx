@@ -5,11 +5,13 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 const items = [
   {
     id: 1,
-    title: "React App",
-    image:
-      "https://images.pexels.com/photos/20054923/pexels-photo-20054923/free-photo-of-moody-days.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+    title: "Bistro-Boss Restaurant",
+    image: "../../../public/bistroBoss.png",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem architecto explicabo fugit quia laborum? Molestiae laudantium dolor, minima commodi voluptate neque voluptatem perferendis accusamus deserunt dolore libero! Necessitatibus, dolorum blanditiis.",
+      "This is a restaurant based project. In this project user can order foopds on their demand. Before order user must be signed in. For authentication I used google firebase auth. There is a user dashbord and Admin dashbord. From user dashbord user can cancel food order. Can see there ordered food.How much should they for food. In admin dashbord user can delete a user, add a food items, delete food items. Many more just explore the project.",
+    codelink: "https://github.com/Nahid-07/Bistro-boss-client",
+    backendCode: "https://github.com/Nahid-07/bistro-boss-server",
+    liveLink: "https://bistro-boss-a90cb.web.app/",
   },
   {
     id: 1,
@@ -51,18 +53,28 @@ const Section = ({ item }) => {
     target: ref,
     // offset:["start start","end start"]
   });
-  const y = useTransform(scrollYProgress,[0,1],[-300,300])
+  const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
   return (
     <section id="Portfolio">
-      <div className="container" >
+      <div className="container">
         <div className="wrapper">
           <div className="imageContainer" ref={ref}>
             <img src={item.image} alt="" />
           </div>
-          <motion.div className="textContainer" style={{y}}>
+          <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.description}</p>
-            <button>See more</button>
+            <div className="buttons">
+              <a href={item.liveLink} target="_blank">
+                <button>Live link</button>
+              </a>
+              <a href={item.codelink} target="_blank">
+                <button>Client code </button>
+              </a>
+              <a href={item.backendCode} target="_blank">
+                <button>Backend code</button>
+              </a>
+            </div>
           </motion.div>
         </div>
       </div>

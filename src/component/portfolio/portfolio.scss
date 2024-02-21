@@ -46,20 +46,29 @@
         gap: 30px;
         
         h2{
-          font-size: 72px;
+          font-size: 60px;
 
         }
         P{
           color: gray;
-          font-size: 20px;
+          font-size: 16px;
         }
-        button{
-          width: 200px;
-          background-color: orange;
-          border: none;
-          padding: 10px;
-          border-radius: 10px;
+        .buttons{
+          display: flex;
+          gap: 20px;
+
+
+          button{
+            width: 200px;
+            background-color: orange;
+            border: none;
+            padding: 10px;
+            border-radius: 10px;
+            font-weight: bold;
+            cursor: pointer;
+          }
         }
+        
       }
     }
   }
