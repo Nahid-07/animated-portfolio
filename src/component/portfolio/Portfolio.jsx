@@ -6,7 +6,7 @@ const items = [
   {
     id: 1,
     title: "Bistro-Boss Restaurant",
-    image: "../../../public/bistroBoss.png",
+    image: "./bistroBoss.png",
     description:
       "This is a restaurant based project. In this project user can order foopds on their demand. Before order user must be signed in. For authentication I used google firebase auth. There is a user dashbord and Admin dashbord. From user dashbord user can cancel food order. Can see there ordered food.How much should they for food. In admin dashbord user can delete a user, add a food items, delete food items. Many more just explore the project.",
     codelink: "https://github.com/Nahid-07/Bistro-boss-client",
@@ -14,20 +14,26 @@ const items = [
     liveLink: "https://bistro-boss-a90cb.web.app/",
   },
   {
-    id: 1,
-    title: "Next.js App",
+    id: 2,
+    title: "Travelog",
     image:
-      "https://images.pexels.com/photos/19345556/pexels-photo-19345556/free-photo-of-reflection-of-a-person-in-a-window.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+      "./travelog.png",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem architecto explicabo fugit quia laborum? Molestiae laudantium dolor, minima commodi voluptate neque voluptatem perferendis accusamus deserunt dolore libero! Necessitatibus, dolorum blanditiis.",
+      "This is a Travel guide based project.. where visitor can see the details of a tourist spot. Visitor can give their review. also they can edit and delete there review from a separete section.",
+      liveLink: "https://a-11-firebase-authantication.web.app/",
+      codelink:'https://github.com/Nahid-07/Travelog-client',
+      backendCode: "https://github.com/Nahid-07/Travelog-server"
   },
   {
-    id: 1,
-    title: "JavaScript App",
+    id: 3,
+    title: "TechBD",
+    liveLink: "https://a10-learning-client-side.web.app/",
+    codelink:"https://github.com/Nahid-07/TechBD-client?tab=readme-ov-file",
+    backendCode:"https://github.com/Nahid-07/techBD-server",
     image:
-      "https://images.pexels.com/photos/20142599/pexels-photo-20142599/free-photo-of-two-swans-are-in-the-water-with-their-heads-touching.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+      "./techbd.png",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem architecto explicabo fugit quia laborum? Molestiae laudantium dolor, minima commodi voluptate neque voluptatem perferendis accusamus deserunt dolore libero! Necessitatibus, dolorum blanditiis.",
+      "This is a course selling project. Privet route.User log in and log out method used. blog section added. FAQ section. and many more!!!! just expolre the project..",
   },
   {
     id: 1,
