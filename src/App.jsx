@@ -10,7 +10,7 @@ const App = () => {
     <div>
       <section id="Homepage">
         <Navbar />
-        {/* <Hero /> */}
+        <Hero />
       </section>
       {/* <section id='Services'><Parallax/></section> */}
       <section id="About">
