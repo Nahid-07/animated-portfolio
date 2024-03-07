@@ -53,9 +53,9 @@ const Hero = () => {
           </motion.h1>
           <motion.div variants={textVariants} className="buttons">
             <motion.button variants={textVariants}>
-              See Latest workd
+              <a href="https://drive.usercontent.google.com/u/1/uc?id=1sTCmXeqmhSXrEmfRKJs0NaIPG749wOOv&export=download">Download resume</a>
             </motion.button>
-            <motion.button variants={textVariants}>Contact me</motion.button>
+            <motion.button variants={textVariants}> <a href="https://wa.me/message/PCEO3PWW4PLIK1" target="_blank">Contact me</a> </motion.button>
           </motion.div>
           <motion.img variants={textVariants} animate="scrollButton" src="/scroll.png" alt="" />
         </motion.div>

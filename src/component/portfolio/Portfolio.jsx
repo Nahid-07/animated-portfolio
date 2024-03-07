@@ -16,40 +16,32 @@ const items = [
   {
     id: 2,
     title: "Travelog",
-    image:
-      "./travelog.png",
+    image: "./travelog.png",
     description:
       "This is a Travel guide based project.. where visitor can see the details of a tourist spot. Visitor can give their review. also they can edit and delete there review from a separete section.",
-      liveLink: "https://a-11-firebase-authantication.web.app/",
-      codelink:'https://github.com/Nahid-07/Travelog-client',
-      backendCode: "https://github.com/Nahid-07/Travelog-server"
+    liveLink: "https://a-11-firebase-authantication.web.app/",
+    codelink: "https://github.com/Nahid-07/Travelog-client",
+    backendCode: "https://github.com/Nahid-07/Travelog-server",
   },
   {
     id: 3,
     title: "TechBD",
     liveLink: "https://a10-learning-client-side.web.app/",
-    codelink:"https://github.com/Nahid-07/TechBD-client?tab=readme-ov-file",
-    backendCode:"https://github.com/Nahid-07/techBD-server",
-    image:
-      "./techbd.png",
+    codelink: "https://github.com/Nahid-07/TechBD-client?tab=readme-ov-file",
+    backendCode: "https://github.com/Nahid-07/techBD-server",
+    image: "./techbd.png",
     description:
       "This is a course selling project. Privet route.User log in and log out method used. blog section added. FAQ section. and many more!!!! just expolre the project..",
   },
   {
-    id: 1,
-    title: "C++ App",
-    image:
-      "https://images.pexels.com/photos/19936782/pexels-photo-19936782/free-photo-of-woman-in-white-dress-walking-on-wet-sea-coast-at-sunset.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+    id: 4,
+    title: "Doctors Portal",
+    image: "/doctor.png",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem architecto explicabo fugit quia laborum? Molestiae laudantium dolor, minima commodi voluptate neque voluptatem perferendis accusamus deserunt dolore libero! Necessitatibus, dolorum blanditiis.",
-  },
-  {
-    id: 1,
-    title: "Html App",
-    image:
-      "https://images.pexels.com/photos/19300588/pexels-photo-19300588/free-photo-of-woman-pouring-water-from-kettle.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem architecto explicabo fugit quia laborum? Molestiae laudantium dolor, minima commodi voluptate neque voluptatem perferendis accusamus deserunt dolore libero! Necessitatibus, dolorum blanditiis.",
+      "This is doctor portal website. A user can book an appointment of a doctor. This project has a dashbord for user and admin. Admin can control user doctors. And many more features.",
+    liveLink: "https://doctorappointment-60ffd.web.app",
+    codelink: "https://github.com/Nahid-07/Doctors-Appointment-client",
+    backendCode: "https://github.com/Nahid-07/Doctors-Appointment-Server",
   },
 ];
 
@@ -57,7 +49,6 @@ const Section = ({ item }) => {
   const ref = useRef();
   const { scrollYProgress } = useScroll({
     target: ref,
-    // offset:["start start","end start"]
   });
   const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
   return (
