@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const AboutMe = () => {
   const textVariants = {
     initial: {
-      x: 500,
+      x: 200,
       opacity: 0,
     },
     animate: {
@@ -18,7 +18,7 @@ const AboutMe = () => {
   };
   const imageVariants = {
     initial: {
-      x: -500,
+      x: -200,
       opacity: 0,
     },
     animate: {

@@ -1,3 +1,4 @@
+@import '../../app.scss';
 .aboutMe{
     height: 100%;
     max-width: 1366px;
@@ -5,6 +6,14 @@
     display: flex;
     align-items: center;
     gap: 50px;
+    @include mobile {
+        flex-direction: column;
+        padding: 20px;
+    }
+    @include tablet {
+        flex-direction: column;
+        padding: 20px;
+    }
 
     .imageContainer{
         flex: 1;
