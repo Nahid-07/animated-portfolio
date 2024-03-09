@@ -1,6 +1,6 @@
-#Portfolio{
+@import "../../app.scss";
+#Portfolio {
   background: linear-gradient(180deg, #1c0e24, #311034);
-
 }
 .skillSection {
   width: 100%;
@@ -8,14 +8,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  .skills{
+  .skills {
     font-size: 72px;
     color: lightgray;
     text-align: center;
     margin-bottom: 50px;
     text-transform: uppercase;
     letter-spacing: 8px;
-
   }
   .myskills {
     width: 1366px;
@@ -35,7 +34,7 @@
         border: none;
         // margin-left: 20px;
       }
-      h1{
+      h1 {
         color: lightgray;
         font-size: 30px;
         width: 250px;

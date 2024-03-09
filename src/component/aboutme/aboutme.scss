@@ -1,37 +1,63 @@
-@import '../../app.scss';
-.aboutMe{
-    height: 100%;
-    max-width: 1366px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    gap: 50px;
+@import "../../app.scss";
+.aboutMe {
+  height: 100%;
+  max-width: 1366px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  @include mobile {
+    flex-direction: column;
+    padding: 20px;
+  }
+  @include tablet {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .imageContainer {
+    width: 50%;
+    img {
+      width: 100%;
+      border-radius: 20px;
+      @include tablet {
+        height: 107%;
+      }
+    }
     @include mobile {
-        flex-direction: column;
-        padding: 20px;
+      width: 100%;
+      height: 50%;
     }
     @include tablet {
-        flex-direction: column;
-        padding: 20px;
+      width: 100%;
+      height: 50%;
     }
-
-    .imageContainer{
-        flex: 1;
-        img{
-            width: 100%;
-            border-radius: 20px;
-        }
+  }
+  .textContainer {
+    width: 50%;
+    h1 {
+      font-size: 40px;
+      @include mobile {
+        font-size: 30px;
+        margin: -20px 0 0 0;
+      }
     }
-    .textContainer{
-        flex: 1;
-        h1{
-            font-size: 40px;
-        }
-        p{
-            font-size: 20px;
-            margin-top: 20px;
-            line-height: 1.5;
-            letter-spacing: 1px;
-        }
+    p {
+      font-size: 20px;
+      margin-top: 20px;
+      line-height: 1.5;
+      letter-spacing: 1px;
+      @include mobile {
+        font-size: 16px;
+      }
     }
+    @include mobile {
+      width: 100%;
+      height: 50%;
+    }
+    @include tablet {
+      width: 100%;
+      height: 50%;
+    }
+  }
 }

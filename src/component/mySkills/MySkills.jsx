@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const MySkills = () => {
   const skillVariant = {
     initial: {
-      x: -500,
+      x: -200,
       opacity: 0,
     },
     animate: {
