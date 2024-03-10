@@ -16,7 +16,7 @@ const App = () => {
         <AboutMe />
       </section>
       <section id="Skills">
-        {/* <MySkills /> */}
+        <MySkills />
       </section>
       <Portfolio />
       <section id="Contact">
