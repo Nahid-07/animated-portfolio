@@ -117,9 +117,12 @@
             border-radius: 10px;
             font-weight: bold;
             cursor: pointer;
-            @include tablet {
-              width: 400px;
-            }
+            // @include mobile {
+            //   width: 200px;
+            // }
+            // @include tablet {
+            //   width: 400px;
+            // }
           }
         }
       }

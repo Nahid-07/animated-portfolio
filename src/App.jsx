@@ -20,7 +20,7 @@ const App = () => {
       </section>
       <Portfolio />
       <section id="Contact">
-        {/* <Contact /> */}
+        <Contact />
       </section>
     </div>
   );
