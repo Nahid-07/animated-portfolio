@@ -12,10 +12,12 @@
 
     @include mobile {
       padding-top: calc(100vh - 100px);
+      z-index: -1000000;
       font-size: 24px;
     }
     @include tablet {
       padding-top: calc(100vh - 100px);
+      z-index: -1000000;
       font-size: 24px;
     }
     .progressBar {
@@ -117,6 +119,7 @@
             border-radius: 10px;
             font-weight: bold;
             cursor: pointer;
+            z-index: 1000000;
             // @include mobile {
             //   width: 200px;
             // }
